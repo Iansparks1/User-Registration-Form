@@ -18,5 +18,4 @@ semantic-html-form/
 Semantic elements used:  (main, section, form, fieldset, legend, label, input, select, textarea, button).
 Inputs are grouped meaningfully using  (fieldset) and described with  (legend). 
 All form controls are explicitly labeled using (for) and (id) attributes.
-
-View the fully functional semantic HTML Form here 
+ 
