@@ -4,13 +4,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h1>User Registration Form</h1>
-
-  <fieldset>
-  <legend><h3>Personal Information</h3></legend>
-  <form action="/submit" method="POST" id="registrationForm">
+  <div class="form-container">
+    <h1 class="form-title">User Registration Form</h1>
+    <form action="/submit" method="POST" id="registrationForm">
+      <div class="form-grid">
+      <fieldset>
+      <legend><h3>Personal Information</h3></legend>
     <label for="firstname">First Name:</label>
     <input type="text" id="firstname" name="firstname" required>
     <br><br>
@@ -36,9 +38,9 @@
       <option value="other">Other</option>
     </select>
     <br><br>
-    <label for="photo">Profile Photo:</label>
-    <input type="file" id="photo" name="photo" accept="image/*" required>
-     </fieldset>
+  <label for="photo">Profile Photo:</label>
+  <input type="file" id="photo" name="photo" accept="image/*" required>
+   </fieldset>
 
      <fieldset>
     <legend><h3>Contact Information</h3></legend>
@@ -71,16 +73,16 @@
       <option value="tanzania">Tanzania</option>
       <option value="rwanda">Rwanda</option>
       <option value="south sudan">South Sudan</option>
-    </select>
-    <br><br>
+  </select>
+    
 
     <label for="zip/postal">Zip/Postal Code:</label>
     <input type="text" id="zip/postal" name="zip/postal" required>
     <br><br>
 
-    <label for="preferred contact time">Preferred Contact Time:</label>
-    <input type="text" id="preferred contact time" name="preferred contact time" required>
-    </fieldset>
+  <label for="preferred contact time">Preferred Contact Time:</label>
+  <input type="text" id="preferred contact time" name="preferred contact time" required>
+  </fieldset>
 
 
     <fieldset>
@@ -127,13 +129,12 @@
       </select>
       <br><br>
 
-      <label for="create password">Create Password:</label>
-      <input type="password" id="create password" name="create password" required>
-      <br><br>
-
-      <label for="confirm password">Confirm Password:</label>
-      <input type="password" id="confirm password" name="confirm password" required>
-      </fieldset>
+  <label for="create password">Create Password:</label>
+  <input type="password" id="create password" name="create password" required>
+      
+  <label for="confirm password">Confirm Password:</label>
+  <input type="password" id="confirm password" name="confirm password" required>
+  </fieldset>
 
       <fieldset>
 
@@ -176,8 +177,12 @@
       <label for="agree to the privacy policy">I agree to the privacy policy</label>
       </fieldset>
 
-  </form>
-  <button type="submit">Register</button>
-  <button type="reset">Clear Form</button>
+      </div> <!-- .form-grid -->
+      <div class="form-actions">
+        <button type="submit" class="btn btn-submit">Register</button>
+        <button type="reset" class="btn btn-reset">Clear Form</button>
+      </div>
+    </form>
+  </div> <!-- .form-container -->
 </body>
 </html>
